@@ -10,7 +10,12 @@
                 <script src="./js/departure-board.js"></script>
                 <script>
  
-                <?php
+                
+ 
+                       
+                        var updateBoard = function() {
+
+                        	<?php
                                 require("OpenLDBWS.php");
  
                                 $OpenLDBWS = new OpenLDBWS("2a991b08-7715-4ff4-ab4a-c6485047f6c5");
@@ -21,9 +26,6 @@
  
                         //      #print_r($departureBoard);
                 ?>
- 
-                       
-                        var updateBoard = function() {
 	
 console.log("Updating board....");
 				var jArray = <?php echo json_encode($departureBoardPHP); ?>;
@@ -45,8 +47,8 @@ console.log("Updating board....");
 				    		//board.setValue (value.std + value.destination.location.locationName);
 				    		if (value.destination.location.locationName == 'Orpington' || value.destination.location.locationName == 'St Albans' || value.destination.location.locationName == 'Luton' || value.destination.location.locationName == 'Bedford' || value.destination.location.locationName == 'Beckenham Junction')
 				    		 {
-				    		 	if (value.destination.location.locationName == 'Orpington')	
-				    			boardArray.push(value.std + ' ' + 'Beckenham Junction'); 	
+				    		 	if (value.destination.location.locationName == 'Orpington' || value.destination.location.locationName == 'Beckenham Junction')	
+				    			boardArray.push(value.std + ' ' + 'Natey (Beckenham)'); 	
 				    			else 
 				    			boardArray.push(value.std + ' ' + 'Blackfriars');
 				    		}
