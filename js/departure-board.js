@@ -41,6 +41,7 @@ DepartureBoard.prototype.spin = function () {
 		(function (i) {
 			window.setTimeout (function () {
 				me._letters[i].spin ();
+				console.log("In Spin");
 			}, 1 * i + Math.random ());
 		})(i);
 	}	
