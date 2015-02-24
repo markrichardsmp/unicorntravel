@@ -40,7 +40,7 @@ DepartureBoard.prototype.spin = function () {
 	for (var i = 0, l = this._letters.length; i < l; i++) {
 		(function (i) {
 			window.setTimeout (function () {
-				me._letters[i].spin ();
+				//me._letters[i].spin ();
 			}, 1 * i + Math.random ());
 		})(i);
 	}	
