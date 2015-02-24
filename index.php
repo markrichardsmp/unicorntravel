@@ -1,6 +1,6 @@
 <html>
         <head>
-                <title>JavaScript/CSS3 Departure Board</title>
+                <title>Unicorn Travel</title>
                 <link rel="stylesheet" href="./css/departure-board.css" />
         </head>
        
