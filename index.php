@@ -47,11 +47,11 @@
 				    		if (value.destination.location.locationName == 'Orpington' || value.destination.location.locationName == 'St Albans' || value.destination.location.locationName == 'Luton' || value.destination.location.locationName == 'Bedford' || value.destination.location.locationName == 'Beckenham Junction')
 				    		 {
 				    		 	if (value.destination.location.locationName == 'Orpington' || value.destination.location.locationName == 'Beckenham Junction')	
-				    			boardArray.push(value.std + ' ' + 'Natey (Beckenham)'); 	
+				    			boardArray.push(value.etd + ' ' + 'Natey (Beckenham)'); 	
 				    			else 
-				    			boardArray.push(value.std + ' ' + 'Blackfriars');
+				    			boardArray.push(value.etd + ' ' + 'Blackfriars');
 				    		}
-				    		else boardArray.push(value.std + ' ' + value.destination.location.locationName);
+				    		else boardArray.push(value.etd + ' ' + value.destination.location.locationName);
 				    		
 				    	}
 					});
