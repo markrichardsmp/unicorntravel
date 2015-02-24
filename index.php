@@ -44,7 +44,7 @@
 				    	if(value.destination && value.destination.location && value.destination.location.locationName) {
 				    		//console.log(value.destination.location.locationName);
 				    		//board.setValue (value.std + value.destination.location.locationName);
-				    		if (value.destination.location.locationName == 'Orpington' || value.destination.location.locationName == 'St Albans' || value.destination.location.locationName == 'Luton' || value.destination.location.locationName == 'Bedford' || value.destination.location.locationName == 'Beckenham Junction')
+				    		if (value.destination.location.locationName == 'Orpington' || value.destination.location.locationName == 'St Albans' || value.destination.location.locationName == 'Luton' || value.destination.location.locationName == 'Bedford' || value.destination.location.locationName == 'Beckenham Junction' || value.destination.location.locationName == 'Kentish Town')
 				    		 {
 				    		 	if (value.destination.location.locationName == 'Orpington' || value.destination.location.locationName == 'Beckenham Junction')	
 				    			
