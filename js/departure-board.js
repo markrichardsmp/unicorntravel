@@ -41,7 +41,6 @@ DepartureBoard.prototype.spin = function () {
 		(function (i) {
 			window.setTimeout (function () {
 				me._letters[i].spin ();
-				console.log("In Spin");
 			}, 1 * i + Math.random ());
 		})(i);
 	}	
@@ -160,7 +159,7 @@ DepartureBoard.Letter.prototype._tick = function () {
 		fallingTextStyle = this._fallingText.style,
 		newValue;
 	
-
+console.log('In tick...');
 	this._index = (this._index + 1) % DepartureBoard.LETTERS.length;
 	newValue = DepartureBoard.LETTERS.charAt (this._index);
 
