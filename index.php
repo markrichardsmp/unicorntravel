@@ -20,7 +20,7 @@
  
                                 $OpenLDBWS = new OpenLDBWS("2a991b08-7715-4ff4-ab4a-c6485047f6c5");
  
-                                $departureBoardPHP = $OpenLDBWS->GetDepartureBoard(10,"HNH", "", "", 15);
+                                $departureBoardPHP = $OpenLDBWS->GetDepartureBoard(10,"HNH", "", "", 5);
  
                         //      #header("Content-Type: text/plain");
  
