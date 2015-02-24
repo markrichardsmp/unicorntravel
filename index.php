@@ -31,7 +31,7 @@
 
 				var myNode = document.getElementById("test");
 			myNode.innerHTML = '';
-				var board = new DepartureBoard (document.getElementById ('test'), { rowCount: 10, letterCount: 25 });
+				var board = new DepartureBoard (document.getElementById ('test'), { rowCount: 10, letterCount: 35 });
  
 				if(jArray.GetStationBoardResult && jArray.GetStationBoardResult.trainServices && jArray.GetStationBoardResult.trainServices.service.length > 0) {
 					
@@ -47,11 +47,11 @@
 				    		if (value.destination.location.locationName == 'Orpington' || value.destination.location.locationName == 'St Albans' || value.destination.location.locationName == 'Luton' || value.destination.location.locationName == 'Bedford' || value.destination.location.locationName == 'Beckenham Junction')
 				    		 {
 				    		 	if (value.destination.location.locationName == 'Orpington' || value.destination.location.locationName == 'Beckenham Junction')	
-				    			boardArray.push(value.etd + ' ' + 'Natey (Beckenham)'); 	
+				    			boardArray.push(value.std + ' ' + value.etd + ' ' + 'Natey (Beckenham)'); 	
 				    			else 
-				    			boardArray.push(value.etd + ' ' + 'Blackfriars');
+				    			boardArray.push(value.std + ' ' + value.etd + ' ' + 'Blackfriars');
 				    		}
-				    		else boardArray.push(value.etd + ' ' + value.destination.location.locationName);
+				    		else boardArray.push(value.std + ' ' + value.etd + ' ' + value.destination.location.locationName);
 				    		
 				    	}
 					});
