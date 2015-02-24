@@ -109,7 +109,7 @@ DepartureBoard.Letter = function () {
 	this._fallingText.className = 'text';
 
 	this._fallingText.style.WebkitTransitionDuration = this._fallingText.style.MozTransitionDuration = 
-		this._fallingText.style.OTransitionDuration = this._fallingText.style.transitionDuration = DepartureBoard.Letter.DROP_TIME * 0.5 + 'ms';
+		this._fallingText.style.OTransitionDuration = this._fallingText.style.transitionDuration = DepartureBoard.Letter.DROP_TIME * 0.01 + 'ms';
 
 	this._falling.appendChild (this._fallingText);
 	
@@ -136,7 +136,7 @@ DepartureBoard.Letter.prototype.spin = function (clear) {
 	if (clear !== false) this._stopAt = null;
 	
 	var me = this;	
-	this._interval = window.setInterval (function () { me._tick (); }, DepartureBoard.Letter.DROP_TIME * 1.1);
+	this._interval = window.setInterval (function () { me._tick (); }, DepartureBoard.Letter.DROP_TIME * 1);
 };
 
 
