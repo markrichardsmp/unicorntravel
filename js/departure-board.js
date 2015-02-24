@@ -136,7 +136,7 @@ DepartureBoard.Letter.prototype.spin = function (clear) {
 	if (clear !== false) this._stopAt = null;
 	
 	var me = this;	
-	this._interval = window.setInterval (function () { me._tick (); }, DepartureBoard.Letter.DROP_TIME * .1);
+	this._interval = window.setInterval (function () { me._tick (); }, DepartureBoard.Letter.DROP_TIME * .01);
 };
 
 
