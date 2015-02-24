@@ -29,7 +29,8 @@ var DepartureBoard = function (element, options) {
 };
 
 
-DepartureBoard.LETTERS = " ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,':()&!?+-";
+//DepartureBoard.LETTERS = " ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,':()&!?+-";
+DepartureBoard.LETTERS = " A";
 
 
 
