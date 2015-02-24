@@ -29,8 +29,7 @@ var DepartureBoard = function (element, options) {
 };
 
 
-//DepartureBoard.LETTERS = " ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,':()&!?+-";
-DepartureBoard.LETTERS = " A";
+DepartureBoard.LETTERS = " ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,':()&!?+-";
 
 
 
@@ -62,7 +61,8 @@ DepartureBoard.prototype.setValue = function (value) {
 				window.setTimeout (function () {
 					var letterValue = value[r].substr (i, 1) || '';
 					me._letters[r][i].setValue (letterValue);
-				}, 2000 * r + 25 * i + Math.random () * 400);
+				}, 1 * r + 1 * i + Math.random ());
+				// 2000 * r + 25 * i + Math.random () * 400);
 			})(r, i);
 		}
 	}
