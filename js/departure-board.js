@@ -146,7 +146,7 @@ DepartureBoard.Letter.prototype.setValue = function (value) {
 	this._stopAt = DepartureBoard.LETTERS.indexOf (value);
 
 	if (this._stopAt < 0) this._stopAt = 0;
-	//if (!this._interval && this._index != this._stopAt) this.spin (false);
+	if (!this._interval && this._index != this._stopAt) this.spin (false);
 };
 
 
@@ -183,7 +183,7 @@ DepartureBoard.Letter.prototype._tick = function () {
 		
 		fallingTextStyle.WebkitTransitionTimingFunction = fallingTextStyle.MozTransitionTimingFunction = fallingTextStyle.OTransitionTimingFunction = fallingTextStyle.transitionTimingFunction = 'ease-out';
 		fallingTextStyle.WebkitTransform = fallingTextStyle.MozTransform = fallingTextStyle.OTransform = fallingTextStyle.transform = 'scaleY(1)';
-	}, DepartureBoard.Letter.DROP_TIME / 2);
+	}, DepartureBoard.Letter.DROP_TIME / 100);
 
 	
 	window.setTimeout (function () {
