@@ -31,7 +31,7 @@
 
 				var myNode = document.getElementById("test");
 			myNode.innerHTML = '';
-				var board = new DepartureBoard (document.getElementById ('test'), { rowCount: 10, letterCount: 35 });
+				var board = new DepartureBoard (document.getElementById ('test'), { rowCount: 10, letterCount: 25 });
  
 				if(jArray.GetStationBoardResult && jArray.GetStationBoardResult.trainServices && jArray.GetStationBoardResult.trainServices.service.length > 0) {
 					
