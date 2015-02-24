@@ -49,26 +49,20 @@
 				    		 	if (value.destination.location.locationName == 'Orpington' || value.destination.location.locationName == 'Beckenham Junction')	
 				    			
 				    				if (value.etd == "On time")
-				    					document.write(value.std + ' ' + 'Natey (Beckenham)');
-				    					//boardArray.push(value.std + ' ' + 'Natey (Beckenham)'); 
+				    					boardArray.push(value.std + ' ' + 'Natey (Beckenham)'); 
 				    				else
-				    					document.write(value.etd + ' ' + 'Natey (Beckenham)');
-				    					//boardArray.push(value.etd + ' ' + 'Natey (Beckenham)');	
+				    					boardArray.push(value.etd + ' ' + 'Natey (Beckenham)');	
 				    			else 
 				    				if (value.etd == "On time")
-				    					document.write(value.std + ' ' + 'Blackfriars');
-				    					//boardArray.push(value.std + ' ' + 'Blackfriars');
+				    					boardArray.push(value.std + ' ' + 'Blackfriars');
 				    				else
-				    					document.write(value.etd + ' ' + 'Blackfriars');)
-				    					//boardArray.push(value.etd + ' ' + 'Blackfriars');
+				    					boardArray.push(value.etd + ' ' + 'Blackfriars');
 				    		}
 				    		else 
 				    				if (value.etd == "On time")
-				    					document.write(value.std + ' ' + value.destination.location.locationName);)	
-				    					//boardArray.push(value.std + ' ' + value.destination.location.locationName);
+				    					boardArray.push(value.std + ' ' + value.destination.location.locationName);
 				    				else
-				    					document.write(value.etd + ' ' + value.destination.location.locationName);)	
-				    					//boardArray.push(value.etd + ' ' + value.destination.location.locationName);
+				    					boardArray.push(value.etd + ' ' + value.destination.location.locationName);
 				    					
 				    		
 				    	}
