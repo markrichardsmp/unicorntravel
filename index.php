@@ -27,7 +27,6 @@
                         //      #print_r($departureBoard);
                 ?>
 	
-console.log("Updating board....");
 				var jArray = <?php echo json_encode($departureBoardPHP); ?>;
 
 				var myNode = document.getElementById("test");
@@ -68,6 +67,7 @@ console.log("Updating board....");
                         //board.setValue(["1335 Kings Cross", "1400 Utopia"]);
                         updateBoard();
                         window.setInterval (function () {
+                                location.reload();
                                 updateBoard();
                         }, 60000);
  
